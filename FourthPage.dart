@@ -17,7 +17,7 @@ class _MyFourthPageState extends State<MyFourthPage> {
   final _model = GenerativeModel(
     model: 'gemini-1.5-flash',
     apiKey:
-        'AIzaSyAb6KNJZcpTJ_LJhqIce-XlaGNvbhvRWIQ', // ⚠ يفضل تبديله بمفتاحك الخاص
+        'AIzaSyAb6KNJZcpTJ_LJhqIce-XlaGNvbhvRWIQ', 
   );
 
   Future<void> _sendPrompt() async {
@@ -63,7 +63,7 @@ class _MyFourthPageState extends State<MyFourthPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: _buildChatList()), // ✅ تم التصحيح هنا
+            Expanded(child: _buildChatList()), 
             if (isLoading) const LinearProgressIndicator(color: Colors.pink),
             _buildInputBar(),
           ],
